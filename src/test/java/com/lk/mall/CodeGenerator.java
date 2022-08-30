@@ -44,10 +44,12 @@ public class CodeGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setModuleName("mall");
         pc.setParent("com.lk");
+
         pc.setController("controller");
         pc.setEntity("entity");
         pc.setService("service");
         pc.setMapper("dao");
+        pc.setXml("mapper");
         mpg.setPackageInfo(pc);
 
 
