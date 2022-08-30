@@ -1,4 +1,4 @@
-package com.mall.common;
+package com.lk.mall.common;
 
 /**
  * @author zhangjianlin
