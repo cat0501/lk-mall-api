@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2022/8/28 3:18 PM
  */
 @SpringBootApplication
-@MapperScan("com.lk.mall.dao")
+@MapperScan("com.lk.mall.mapper")
 public class Bootstrap {
     public static void main(String[] args) {
         SpringApplication.run(Bootstrap.class, args);

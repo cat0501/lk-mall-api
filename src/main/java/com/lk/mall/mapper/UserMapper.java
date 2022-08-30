@@ -1,4 +1,4 @@
-package com.lk.mall.dao;
+package com.lk.mall.mapper;
 
 import com.lk.mall.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
