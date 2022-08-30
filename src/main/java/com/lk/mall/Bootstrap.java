@@ -1,4 +1,4 @@
-package com.mall;
+package com.lk.mall;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
