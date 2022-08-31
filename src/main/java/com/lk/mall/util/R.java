@@ -2,18 +2,20 @@ package com.lk.mall.util;
 
 import cn.hutool.core.util.StrUtil;
 import lombok.Data;
+import lombok.ToString;
 
 import java.io.Serializable;
 
 /**
- * 统一返回结果
+ * 统一返回值
  * @param <T>
  */
 @Data
+@ToString
 public class R<T> implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private int code;
+    private int resultCode;
     private String message;
     private T data;
 
@@ -22,7 +24,7 @@ public class R<T> implements Serializable {
     }
 
     public R(int code, String message) {
-        this.code = code;
+        this.resultCode = code;
         this.message = message;
     }
 
@@ -35,19 +37,19 @@ public class R<T> implements Serializable {
     // 成功返回————————————————————————————————————————————————————————————
     public R<T> ok(){
         R<T> r = new R<>();
-        r.setCode(RESULT_CODE_SUCCESS);
+        r.setResultCode(RESULT_CODE_SUCCESS);
         r.setMessage(DEFAULT_SUCCESS_MESSAGE);
         return r;
     }
     public R<T> ok(String message){
         R<T> r = new R<>();
-        r.setCode(RESULT_CODE_SUCCESS);
+        r.setResultCode(RESULT_CODE_SUCCESS);
         r.setMessage(message);
         return r;
     }
     public R<T> ok(T data){
         R<T> r = new R<>();
-        r.setCode(RESULT_CODE_SUCCESS);
+        r.setResultCode(RESULT_CODE_SUCCESS);
         r.setMessage(DEFAULT_SUCCESS_MESSAGE);
         r.setData(data);
         return r;
@@ -56,7 +58,7 @@ public class R<T> implements Serializable {
     // 失败返回————————————————————————————————————————————————————————————
     public R<T> fail(String message){
         R<T> r = new R<>();
-        r.setCode(RESULT_CODE_SERVER_ERROR);
+        r.setResultCode(RESULT_CODE_SERVER_ERROR);
         r.setMessage( StrUtil.isEmpty(message) ? DEFAULT_FAIL_MESSAGE : message);
         return r;
     }

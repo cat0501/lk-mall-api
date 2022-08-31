@@ -15,7 +15,7 @@ app.config.globalProperties.$filters = {
       return url
     } else {
       // url = `http://backend-api-01.newbee.ltd${url}`
-      url = `http://127.0.0.1:28019${url}`
+      url = `http://127.0.0.1:8001${url}`
       return url
     }
   }
