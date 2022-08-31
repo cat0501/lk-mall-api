@@ -4,7 +4,7 @@ import { setLocal } from '@/common/js/utils'
 import router from '../router'
 
 // axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//backend-api-01.newbee.ltd/api/v1' : '//backend-api-01.newbee.ltd/api/v1'
-axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//127.0.0.1:28019/api/v1' : '//127.0.0.1:28019/api/v1'
+axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//127.0.0.1:8001/api/v1' : '//127.0.0.1:8001/api/v1'
 
 
 axios.defaults.withCredentials = true
