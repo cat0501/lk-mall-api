@@ -2,6 +2,10 @@ package com.lk.mall.service;
 
 import com.lk.mall.entity.IndexConfig;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lk.mall.entity.vo.IndexInfoVo;
+import com.lk.mall.entity.vo.MallCarouselVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IIndexConfigService extends IService<IndexConfig> {
 
+    //获取首页信息
+    IndexInfoVo getIndexInfo();
 }
