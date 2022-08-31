@@ -1,6 +1,5 @@
 package com.lk.mall.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -15,6 +14,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @EnableOpenApi //表示此项目启用 Swagger API 文档
 public class Swagger3Config {
 
+
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.OAS_30) // v2 不同
@@ -24,12 +24,13 @@ public class Swagger3Config {
                 .build();
     }
 
+
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("lk-mall 商城接口文档")
+                .title("商城接口文档")
                 .description("swagger接口文档")
-                .version("3.0")
+                .version("1.0")
                 .build();
     }
-
 }

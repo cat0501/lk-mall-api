@@ -50,13 +50,13 @@ public class CodeGenerator {
         pc.setController("controller");
         pc.setEntity("entity");
         pc.setService("service");
-        pc.setMapper("dao");
+        pc.setMapper("mapper");
         mpg.setPackageInfo(pc);
 
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("mall_user");
+        strategy.setInclude("mall_index_config");
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 
