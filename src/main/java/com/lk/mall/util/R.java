@@ -41,17 +41,20 @@ public class R<T> implements Serializable {
         r.setMessage(DEFAULT_SUCCESS_MESSAGE);
         return r;
     }
-    public R<T> ok(String message){
-        R<T> r = new R<>();
-        r.setResultCode(RESULT_CODE_SUCCESS);
-        r.setMessage(message);
-        return r;
-    }
+
     public R<T> ok(T data){
         R<T> r = new R<>();
         r.setResultCode(RESULT_CODE_SUCCESS);
         r.setMessage(DEFAULT_SUCCESS_MESSAGE);
         r.setData(data);
+        return r;
+    }
+
+    public R<T> ok(T data, String message){
+        R<T> r = new R<>();
+        r.setResultCode(RESULT_CODE_SUCCESS);
+        r.setData(data);
+        r.setMessage(message);
         return r;
     }
 

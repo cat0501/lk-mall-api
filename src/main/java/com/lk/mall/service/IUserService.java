@@ -4,13 +4,16 @@ import com.lk.mall.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * <p>
- *  服务类
- * </p>
- *
  * @author lak
  * @since 2022-08-30
  */
 public interface IUserService extends IService<User> {
+    /**
+     * @description 登录
+     * @updateTime 2022/9/1 13:45
+     * @return java.lang.String
+     */
+    String login(String loginName, String passwordMD5);
 
+    String register(String loginName, String password);
 }
