@@ -5,6 +5,7 @@ import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.api.R;
 import com.lk.mall.common.SystemConstant;
 import com.lk.mall.entity.User;
 import com.lk.mall.entity.UserToken;
@@ -12,6 +13,7 @@ import com.lk.mall.mapper.UserMapper;
 import com.lk.mall.mapper.UserTokenMapper;
 import com.lk.mall.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lk.mall.util.MD5Util;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -122,7 +124,22 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     @Override
     public String register(String loginName, String password) {
 
-        return null;
+        LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(User::getLoginName, loginName);
+        if(userMapper.selectOne(lambdaQueryWrapper) != null){
+            return "用户名已存在";
+        }
+        User registerUser = new User();
+        registerUser.setLoginName(loginName);
+        registerUser.setPasswordMd5(password);
+        registerUser.setNickName(loginName);
+        registerUser.setIntroduceSign("加油");
+        String passwordMD5 = MD5Util.MD5Encode(password, "UTF-8");
+        registerUser.setPasswordMd5(passwordMD5);
+        if (userMapper.insert(registerUser) > 0){
+            return "success";
+        }
+        return "database error";
     }
 
     private static String getNewToken(String timeStr, Long userId) {

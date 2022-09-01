@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @description 登录名和密码
  * @updateTime 2022/9/1 13:11
  */
-@Data
+//@Data
 public class UserLoginParam implements Serializable {
 
     @ApiModelProperty("用户名")
@@ -25,4 +25,19 @@ public class UserLoginParam implements Serializable {
     @JsonProperty(value = "passwordMd5")
     private String passwordMd5;
 
+    public String getLoginName() {
+        return loginName;
+    }
+
+    public void setLoginName(String loginName) {
+        this.loginName = loginName;
+    }
+
+    public String getPasswordMd5() {
+        return passwordMd5;
+    }
+
+    public void setPasswordMd5(String passwordMd5) {
+        this.passwordMd5 = passwordMd5;
+    }
 }

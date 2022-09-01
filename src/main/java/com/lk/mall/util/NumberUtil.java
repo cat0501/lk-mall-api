@@ -22,7 +22,7 @@ public class NumberUtil {
     }
 
     public static void main(String[] args) {
-        boolean isPhone = NumberUtil.isPhone("15229246362");
+        boolean isPhone = NumberUtil.isPhone("17782975312");
         boolean isPhone2 = NumberUtil.isPhone("19229246362");
         boolean isPhone3 = NumberUtil.isPhone("5229246362");
         System.out.println(isPhone); // true

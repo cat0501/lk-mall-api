@@ -12,4 +12,6 @@ public interface UserTokenMapper extends BaseMapper<UserToken> {
 
     UserToken selectByPrimaryKey(Long userId);
 
+    UserToken selectByToken(String token);
+
 }
