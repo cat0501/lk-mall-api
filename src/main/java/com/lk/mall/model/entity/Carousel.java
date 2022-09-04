@@ -1,4 +1,4 @@
-package com.lk.mall.entity;
+package com.lk.mall.model.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -20,31 +20,21 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("mall_index_config")
-public class IndexConfig implements Serializable {
+@TableName("mall_carousel")
+public class Carousel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 首页配置项主键id
+     * 首页轮播图主键id
      */
-    @TableId(value = "config_id", type = IdType.AUTO)
-    private Long configId;
+    @TableId(value = "carousel_id", type = IdType.AUTO)
+    private Integer carouselId;
 
     /**
-     * 显示字符(配置搜索时不可为空，其他可为空)
+     * 轮播图
      */
-    private String configName;
-
-    /**
-     * 1-搜索框热搜 2-搜索下拉框热搜 3-(首页)热销商品 4-(首页)新品上线 5-(首页)为你推荐
-     */
-    private Integer configType;
-
-    /**
-     * 商品id 默认为0
-     */
-    private Long goodsId;
+    private String carouselUrl;
 
     /**
      * 点击后的跳转地址(默认不跳转)
@@ -54,7 +44,7 @@ public class IndexConfig implements Serializable {
     /**
      * 排序值(字段越大越靠前)
      */
-    private Integer configRank;
+    private Integer carouselRank;
 
     /**
      * 删除标识字段(0-未删除 1-已删除)
@@ -72,7 +62,7 @@ public class IndexConfig implements Serializable {
     private Integer createUser;
 
     /**
-     * 最新修改时间
+     * 修改时间
      */
     private LocalDateTime updateTime;
 

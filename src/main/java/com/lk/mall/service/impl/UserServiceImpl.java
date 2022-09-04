@@ -1,14 +1,10 @@
 package com.lk.mall.service.impl;
 
-import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.RandomUtil;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.api.R;
 import com.lk.mall.common.SystemConstant;
-import com.lk.mall.entity.User;
-import com.lk.mall.entity.UserToken;
+import com.lk.mall.model.entity.User;
+import com.lk.mall.model.entity.UserToken;
 import com.lk.mall.mapper.UserMapper;
 import com.lk.mall.mapper.UserTokenMapper;
 import com.lk.mall.service.IUserService;

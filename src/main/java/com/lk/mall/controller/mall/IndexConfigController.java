@@ -1,7 +1,6 @@
 package com.lk.mall.controller.mall;
 
-import com.lk.mall.entity.vo.IndexInfoVo;
-import com.lk.mall.entity.vo.MallCarouselVo;
+import com.lk.mall.model.vo.IndexInfoVo;
 import com.lk.mall.service.IIndexConfigService;
 import com.lk.mall.util.R;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.lk.mall.entity.vo;
+package com.lk.mall.model.vo;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.lk.mall.service.impl;
 
-import com.lk.mall.entity.GoodsCategory;
+import com.lk.mall.model.entity.GoodsCategory;
 import com.lk.mall.mapper.GoodsCategoryMapper;
 import com.lk.mall.service.IGoodsCategoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

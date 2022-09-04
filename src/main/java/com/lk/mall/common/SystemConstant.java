@@ -18,4 +18,9 @@ public class SystemConstant {
     public static final String LOGIN_ERROR = "登陆失败";
 
 
+    /**
+     * 分类页面
+     */
+    public static final String DATA_NOT_FOUND = "未查询到记录！";
+
 }

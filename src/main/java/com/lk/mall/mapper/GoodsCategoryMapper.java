@@ -1,6 +1,6 @@
 package com.lk.mall.mapper;
 
-import com.lk.mall.entity.GoodsCategory;
+import com.lk.mall.model.entity.GoodsCategory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

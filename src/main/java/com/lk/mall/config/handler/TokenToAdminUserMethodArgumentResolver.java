@@ -10,7 +10,7 @@ package com.lk.mall.config.handler;
 
 import com.lk.mall.common.MallException;
 import com.lk.mall.config.annotation.TokenToAdminUser;
-import com.lk.mall.entity.UserToken;
+import com.lk.mall.model.entity.UserToken;
 import com.lk.mall.mapper.UserTokenMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;

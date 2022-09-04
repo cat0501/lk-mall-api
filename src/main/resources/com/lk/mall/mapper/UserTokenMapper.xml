@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lk.mall.mapper.UserTokenMapper">
 
-    <resultMap id="BaseResultMap" type="com.lk.mall.entity.UserToken">
+    <resultMap id="BaseResultMap" type="com.lk.mall.model.entity.UserToken">
         <id column="user_id" jdbcType="BIGINT" property="userId" />
         <result column="token" jdbcType="VARCHAR" property="token" />
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />

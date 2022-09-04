@@ -1,4 +1,4 @@
-package com.lk.mall.entity;
+package com.lk.mall.model.entity;
 
 import lombok.Data;
 import java.util.Date;

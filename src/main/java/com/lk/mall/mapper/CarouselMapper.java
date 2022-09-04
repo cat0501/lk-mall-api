@@ -1,6 +1,6 @@
 package com.lk.mall.mapper;
 
-import com.lk.mall.entity.Carousel;
+import com.lk.mall.model.entity.Carousel;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

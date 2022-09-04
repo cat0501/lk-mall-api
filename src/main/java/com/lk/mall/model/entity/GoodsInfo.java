@@ -1,4 +1,4 @@
-package com.lk.mall.entity;
+package com.lk.mall.model.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;

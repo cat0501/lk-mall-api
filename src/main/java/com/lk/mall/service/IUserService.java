@@ -1,6 +1,6 @@
 package com.lk.mall.service;
 
-import com.lk.mall.entity.User;
+import com.lk.mall.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

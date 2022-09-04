@@ -1,7 +1,7 @@
 package com.lk.mall.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lk.mall.entity.UserToken;
+import com.lk.mall.model.entity.UserToken;
 
 /**
  * @author Lemonade

@@ -1,6 +1,6 @@
 package com.lk.mall.mapper;
 
-import com.lk.mall.entity.User;
+import com.lk.mall.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

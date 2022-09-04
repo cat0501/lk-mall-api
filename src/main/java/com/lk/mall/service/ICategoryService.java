@@ -1,7 +1,8 @@
 package com.lk.mall.service;
 
-import com.lk.mall.model.entity.Carousel;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lk.mall.model.entity.GoodsCategory;
+import com.lk.mall.model.vo.CategoryVO;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author lak
  * @since 2022-08-31
  */
-public interface ICarouselService extends IService<Carousel> {
+public interface ICategoryService extends IService<GoodsCategory> {
 
 }

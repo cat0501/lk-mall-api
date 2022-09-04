@@ -1,9 +1,9 @@
 package com.lk.mall.service.impl;
 
-import com.lk.mall.entity.Carousel;
-import com.lk.mall.entity.IndexConfig;
-import com.lk.mall.entity.vo.IndexInfoVo;
-import com.lk.mall.entity.vo.MallCarouselVo;
+import com.lk.mall.model.entity.Carousel;
+import com.lk.mall.model.entity.IndexConfig;
+import com.lk.mall.model.vo.IndexInfoVo;
+import com.lk.mall.model.vo.MallCarouselVo;
 import com.lk.mall.mapper.IndexConfigMapper;
 import com.lk.mall.service.ICarouselService;
 import com.lk.mall.service.IIndexConfigService;

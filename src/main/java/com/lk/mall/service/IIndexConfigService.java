@@ -1,11 +1,8 @@
 package com.lk.mall.service;
 
-import com.lk.mall.entity.IndexConfig;
+import com.lk.mall.model.entity.IndexConfig;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lk.mall.entity.vo.IndexInfoVo;
-import com.lk.mall.entity.vo.MallCarouselVo;
-
-import java.util.List;
+import com.lk.mall.model.vo.IndexInfoVo;
 
 /**
  * <p>
