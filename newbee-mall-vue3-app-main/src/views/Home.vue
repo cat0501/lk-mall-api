@@ -14,12 +14,15 @@
     </header>
     <nav-bar/>
     <swiper :list="swiperList"></swiper>
+
     <div class="category-list">
       <div v-for="item in categoryList" v-bind:key="item.categoryId" @click="tips">
         <img :src="item.imgUrl">
         <span>{{ item.name }}</span>
       </div>
     </div>
+
+
     <div class="good">
       <header class="good-header">新品上线</header>
       <van-skeleton title :row="3" :loading="loading">

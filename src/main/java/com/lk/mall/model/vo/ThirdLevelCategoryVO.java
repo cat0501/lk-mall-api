@@ -22,4 +22,7 @@ public class ThirdLevelCategoryVO {
 
     @ApiModelProperty("父级分类ID")
     private Long parentId;
+
+    @ApiModelProperty("img")
+    private String img;
 }

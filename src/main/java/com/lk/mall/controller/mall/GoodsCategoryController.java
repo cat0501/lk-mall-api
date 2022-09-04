@@ -73,6 +73,15 @@ public class GoodsCategoryController {
     }
 
 
+    /**
+     * @description 获取不同级别分类的数据
+     * @author Lemonade
+     * @param: t 不同级别数据的类型
+     * @param: categories 所有数据
+     * @param: level 分类级别
+     * @updateTime 2022/9/4 2:36 PM
+     * @return: java.util.List<T>
+     */
     private <T> List<T> getCategories(Class<T> t, List<GoodsCategory> categories, int level) throws InstantiationException, IllegalAccessException {
         List<GoodsCategory> categoryVOS = categories.stream()
                 .filter(e -> e.getCategoryLevel() == level).collect(Collectors.toList());

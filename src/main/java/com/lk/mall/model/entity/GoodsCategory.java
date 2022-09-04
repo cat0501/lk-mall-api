@@ -76,5 +76,5 @@ public class GoodsCategory implements Serializable {
      */
     private Integer updateUser;
 
-
+    private String img;
 }
